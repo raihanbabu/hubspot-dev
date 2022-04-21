@@ -1,0 +1,11 @@
+{
+  "label" : "Hubspot Hello",
+  "preview_path" : "Templates/home-page.html",
+  "screenshot_path" : null,
+  "enable_domain_stylesheets" : false,
+  "is_available_for_new_content" : true,
+  "author" : {
+    "name" : "Raihan",
+    "email" : "aburaihankabir@gmail.com"
+  }
+}

@@ -1,0 +1,178 @@
+/* Default CSS */
+/* Normalize CSS */
+* {
+  box-sizing: border-box;
+  font-family: Helvetica, sans-serif;
+  --blackColor: #000000;
+  --whiteColor: #ffffff;
+  --primaryColor: #32a800;
+}
+
+body,
+html,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div {
+  font-family: 'Montserrat', sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+body img {
+  max-width: 100%;
+}
+
+.t-c {
+  text-align: center;
+}
+
+.t-r {
+  text-align: right;
+}
+
+.ctn-btn a {
+  background-color: var(--primaryColor);
+  text-decoration: none;
+  color: var(--whiteColor);
+  padding: 14px 28px;
+  border-radius: 2px;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 14px;
+  letter-spacing: 1px;
+}
+
+.ctn-btn a:hover {
+  background-color: var(--blackColor);
+}
+
+.br-divider {
+  width: 100px;
+  height: 2px;
+  background: var(--primaryColor);
+  margin: 10px auto 0;
+}
+
+/* Main CSS */
+
+/* Layout CSS */
+.container {
+  display: block;
+  max-width: 1140px;
+  margin: auto;
+}
+
+/* Header CSS */
+header {
+  background: {{theme.header_bg_color.color}};
+  padding: 10px 20px;
+  color: {{theme.header_text_color.color}};
+}
+
+header .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  align-items: center;
+}
+
+header .logo a {
+  display: block;
+}
+
+header .logo img {
+  max-width: 200px;
+}
+
+header .call-to-action-btn {
+  text-align: right;
+}
+
+header .call-to-action-btn a {
+  background-color: var(--primaryColor);
+  text-decoration: none;
+  color: var(--whiteColor);
+  padding: 14px 28px;
+  border-radius: 2px;
+  transition: 0.5s all;
+  text-transform: uppercase;
+  display: inline-block;
+  font-weight: 600;
+  font-size: 16px;
+  letter-spacing: 1px;
+}
+
+header .call-to-action-btn a:hover {
+  background-color: var(--blackColor);
+}
+
+/* Hero CSS */
+section.hero-section {
+  background: #000;
+  color: var(--whiteColor);
+  padding: 80px 15px;
+}
+
+.hero-section .container {
+  display: grid;
+  grid-template-columns: 50% 50%;
+}
+
+.hero-content>div {
+  max-width: 500px;
+  padding-top: 20px;
+}
+
+section.hero-section h1 {
+  font-size: 72px;
+  margin-bottom: 20px;
+  max-width: 320px;
+  font-weight: 800;
+}
+
+section.hero-section p {
+  font-size: 16px;
+  line-height: 26px;
+}
+
+/* Testimonials CSS */
+section.testimonials {
+  padding: 80px 15px;
+}
+
+/* Footer CSS */
+footer.footer {
+  text-align: center;
+  padding: 15px 10px;
+  color: var(--whiteColor);
+  background-color: var(--blackColor);
+}
+
+footer.footer a {
+  color: var(--primaryColor);
+}
+
+/* Responsive */
+
+@media screen and (max-width: 767px) {
+  header .logo img {
+    max-width: 150px;
+  }
+  section.hero-section {
+    padding: 60px 15px;
+  }
+  section.hero-section .container {
+    display: block
+  }
+  section.hero-section .hero-image {
+    padding-top: 40px
+  }
+
+}
+

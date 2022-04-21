@@ -1,0 +1,34 @@
+[
+  {
+    "label": "Header Background Color",
+    "name": "header_bg_color",
+    "type": "color",
+    "default": {
+      "color": "#333"
+    }
+  },
+  {
+    "label": "Header Text Color",
+    "name": "header_text_color",
+    "type": "color",
+    "default": {
+      "color": "#fff"
+    }
+  },
+  {
+    "name": "font",
+    "label": "Font",
+    "required": false,
+    "locked": false,
+    "load_external_fonts": true,
+    "type": "font",
+    "default": {
+      "size": 12,
+      "font": "Montserrat",
+      "font_set": "GOOGLE",
+      "size_unit": "px",
+      "color": "#000",
+      "styles": {}
+    }
+  }
+]

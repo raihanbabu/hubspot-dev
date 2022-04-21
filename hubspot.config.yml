@@ -1,0 +1,12 @@
+defaultPortal: dev
+portals:
+  - name: dev
+    portalId: 21054106
+    authType: personalaccesskey
+    personalAccessKey: >-
+      CiRjMGEwYzZjNi1iMTI1LTQwZmItOGNiOC1mYzczYTM5OWVhNDUQmoWFChiw_s4DKhkABeaRgonUblHid3ZvD-x3_dJl7rVPXpKySgNuYTE
+    auth:
+      tokenInfo:
+        accessToken: >-
+          CIyCu9iEMBIJAA0AAAAA4A0DGJqFhQogsP7OAyju6QwyFDGNdFPK-WGCZcMf16FOrXQHx3gQOigAAARBAAAAeAAAAAAAAAAAAAAAAAAAAAQAAMAHAP7_MTwAAAYAAABgQhRWwwb_Ic-nqSMHHJi-H9vqBslQq0oDbmExUgBaAA
+        expiresAt: '2022-04-21T07:38:19.791Z'

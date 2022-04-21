@@ -1,0 +1,81 @@
+<!--
+    templateType: page
+    label: Home template
+    isAvailableForNewContent: true
+-->
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>{{ content.html_title }}</title>
+  <meta name="description" content="{{ content.meta_description }}">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&display=swap"
+    rel="stylesheet" />
+  {{ require_css(get_asset_url('../css/layout.css')) }}
+  {{ require_css(get_asset_url('../css/main.css')) }}
+  {{ standard_header_includes }}
+</head>
+
+<body>
+
+  <!-- Header Template -->
+  {% global_partial path='./Partials/header.html' %}
+
+
+  <!-- Main Content -->
+  <div class="page-content">
+    <div class="main-content">
+
+      <!-- Hero Section -->
+      <section class="hero-section">
+        <div class="container">
+          <div class="hero-content">
+            {% module "hero_rich_text" path="@hubspot/rich_text" label="Hero Text" %}
+          </div>
+          <div class="hero-image t-c">
+            {% module "page_hero_image" path="@hubspot/image" label="Hero image" %}
+          </div>
+        </div>
+      </section>
+      <!-- // Hero Section -->
+
+      <div class="extra-content">
+        {% dnd_area "extra-content-section", class="Extra Content Section" %}
+
+        {% end_dnd_area %}
+      </div>
+
+      <!-- Testimonials Section -->
+      <section class="testimonials t-c">
+        <div class="container">
+
+          <div class="testimonial--module">
+
+            {% module "module_16505229542282" path="/hubspot-hello/Modules/Testimonials", label="Testimonials" %}
+
+          </div>
+
+        </div>
+      </section>
+      <!-- // Testimonials Section -->
+
+      <div class="extra-content">
+        {% dnd_area "extra-content-section-2", class="Extra Content Section" %}
+
+        {% end_dnd_area %}
+      </div>
+
+
+    </div>
+  </div>
+  <!-- // Main Content -->
+
+  <!-- Footer Template -->
+  {% global_partial path='./Partials/footer.html' %}
+
+
+  {{ standard_footer_includes }}
+</body>
+
+</html>

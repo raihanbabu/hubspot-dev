@@ -1,0 +1,41 @@
+<!-- module html  -->
+<div class="testimonial-hero">
+  <div class="testimonial-hero-title">
+    {% inline_text field="testimonials_top_title" value="{{ module.testimonials_top_title }}" %}
+  </div>
+  <div class="testimonial-hero-content">
+    {% inline_rich_text field="testimonials_top_text" value="{{ module.testimonials_top_text }}" %}
+  </div>
+  <div class="br-divider"></div>
+</div>
+
+<div class="testimonials-content">
+  {% for item in module.testimonial_item %}
+  <div class="testimonials__item">
+    <div class="testimonials__item-img">
+      {% if item.testimonial_image.src %}
+      {% set sizeAttrs = 'width="{{ item.testimonial_image.width }}" height="{{ item.testimonial_image.height }}"' %}
+      {% if item.testimonial_image.size_type == 'auto' %}
+      {% set sizeAttrs = 'style="max-width: 100%; height: auto;"' %}
+      {% elif item.testimonial_image.size_type == 'auto_custom_max' %}
+      {% set sizeAttrs = 'width="{{ item.testimonial_image.max_width }}" height="{{ item.testimonial_image.max_height
+      }}" style="max-width: 100%; height: auto;"' %}
+      {% endif %}
+      {% set loadingAttr = item.testimonial_image.loading != 'disabled' ? 'loading="{{ item.testimonial_image.loading
+      }}"' : '' %}
+      <img src="{{ item.testimonial_image.src }}" alt="{{ item.testimonial_image.alt }}" {{ loadingAttr }} {{ sizeAttrs
+        }}>
+      {% endif %}
+    </div>
+    <div class="testimonials__item-name">{% inline_text field="testimonial_name" value="{{ item.testimonial_name }}" %}
+    </div>
+    <div class="testimonials__item-title">{% inline_text field="testimonial_title" value="{{ item.testimonial_title }}"
+      %}</div>
+    <!-- <div class="testimonials__item-date">{{ item.testimonial_date }}</div> -->
+    <div class="testimonials__item-content">{% inline_rich_text field="testimonial_content" value="{{
+      item.testimonial_content }}" %}</div>
+
+
+  </div>
+  {% endfor %}
+</div>

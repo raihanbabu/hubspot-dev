@@ -1,0 +1,97 @@
+[
+  {
+    "type": "text",
+    "id": "26000840-6d8f-dc99-a6ee-0e9a45c8e40e",
+    "validation_regex": "",
+    "label": "Testimonials top title",
+    "name": "testimonials_top_title"
+  },
+  {
+    "type": "richtext",
+    "id": "341531e2-28e5-ac88-6cb2-bb4281bb2902",
+    "label": "Testimonials top text",
+    "name": "testimonials_top_text"
+  },
+  {
+    "children": [
+      {
+        "allow_new_line": false,
+        "display_width": null,
+        "id": "9e5e36f6-5bd9-19b8-ce21-b2cf17f5e54f",
+        "label": "Testimonial name",
+        "locked": false,
+        "name": "testimonial_name",
+        "required": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "validation_regex": ""
+      },
+      {
+        "allow_new_line": false,
+        "display_width": null,
+        "id": "95117525-c388-d057-a94d-d624c872907e",
+        "label": "Testimonial title",
+        "locked": false,
+        "name": "testimonial_title",
+        "required": false,
+        "show_emoji_picker": false,
+        "type": "text",
+        "validation_regex": ""
+      },
+      {
+        "display_width": null,
+        "id": "00f843c3-9631-99a3-a970-1bd1cad2561a",
+        "label": "Testimonial Date",
+        "locked": false,
+        "name": "testimonial_date",
+        "required": false,
+        "type": "date"
+      },
+      {
+        "display_width": null,
+        "id": "44125ecd-bb55-6036-2af9-0111b25c516d",
+        "label": "Testimonial Content",
+        "locked": false,
+        "name": "testimonial_content",
+        "required": false,
+        "type": "richtext"
+      },
+      {
+        "default": {
+          "size_type": "auto",
+          "src": "",
+          "alt": null,
+          "loading": "lazy"
+        },
+        "display_width": null,
+        "id": "73569fe3-8431-9f1b-20cc-d9c740569ce4",
+        "label": "Testimonial Image",
+        "locked": false,
+        "name": "testimonial_image",
+        "required": false,
+        "resizable": true,
+        "responsive": true,
+        "show_loading": false,
+        "type": "image"
+      }
+    ],
+    "default": {
+      "testimonial_image": {
+        "size_type": "auto",
+        "src": "",
+        "alt": null,
+        "loading": "lazy"
+      }
+    },
+    "display_width": null,
+    "expanded": false,
+    "id": "c0e93e95-8806-e0d5-a89b-b592d660ddb9",
+    "label": "Testimonial item",
+    "locked": false,
+    "name": "testimonial_item",
+    "occurrence": {},
+    "required": false,
+    "tab": "CONTENT",
+    "type": "group"
+  }
+]
